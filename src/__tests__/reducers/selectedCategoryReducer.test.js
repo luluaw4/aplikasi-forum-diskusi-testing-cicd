@@ -19,6 +19,6 @@ describe('selectedCategoryReducer', () => {
   it('harus mengembalikan state sebelumnya ketika menerima action tidak dikenal', () => {
     const nextState = selectedCategoryReducer('testing', { type: 'UNKNOWN_ACTION' });
 
-    expect(nextState).toBe('testing2');
+    expect(nextState).toBe('testing');
   });
 });
